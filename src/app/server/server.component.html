@@ -1,1 +1,7 @@
-<p>{{'Server'}} with ID {{serverID}} is {{getServerStatus(4200)}}</p>
+<p
+[ngStyle]="{backgroundColor: getColor(red)}"
+[ngClass]="{online: getServerStatus()}"
+>{{'Server'}} on port {{serverID}} is {{serverStatus}}</p>
+
+<!-- [ngClass]="{online: serverStatus === 'online'}" -->
+<!-- add class online if.... -->
